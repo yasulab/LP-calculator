@@ -21,13 +21,13 @@ ID = a|b|...|y|z|A|B|...|Y|Z
 
 Sample Output
 -------------
+4. 実行例
 yohei@YOHEI-note ~/wl/calc
 $ gcc calc.c -o calc
-
 yohei@YOHEI-note ~/wl/calc
 $ ./calc
 
-/* General Operations */
+----- 小数点、各演算子、括弧、代入、終了の確認 -----
 # +2-1
 >> 1.000000
 
@@ -86,8 +86,7 @@ yohei@YOHEI-note ~/wl/calc
 $
 
 
-/* Exception Handler*/
-
+----- 誤り処理 -----
 # 1+ 2++ 4
 error: incorrect position of symbol.
 1+ 2++ 4
