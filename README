@@ -1,0 +1,19 @@
+This program is a calculator which can run along this specification below.
+
+1. can use operands: +, -, *, /, %
+2. can use Gauss's integer using branckets
+3. can change priority of operation using parenthsis
+4. can assign value to a valuable structured by alphabets 
+
+
+The specification is implemented by this syntax rule below.
+
+expression = ['-'] term {('+'|'-') term }
+term = primary {('*'|'/'|'%') primary }
+primary = character | figure | '(' expression ')' | '[' expression ']'
+character = ID | ID '=' expression
+figure = {number} ['.' {number}]
+number = 0|1|2|3|4|5|6|7|8|9
+ID = a|b|...|y|z|A|B|...|Y|Z
+
+
